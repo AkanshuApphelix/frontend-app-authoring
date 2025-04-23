@@ -106,6 +106,7 @@
     "yup": "0.31.1"
   },
   "devDependencies": {
+    "@edx/frontend-build": "^13.0.14",
     "@edx/react-unit-test-utils": "^4.0.0",
     "@edx/stylelint-config-edx": "2.3.3",
     "@edx/typescript-config": "^1.0.1",

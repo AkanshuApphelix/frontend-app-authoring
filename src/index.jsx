@@ -30,6 +30,7 @@ import CourseRerun from './course-rerun';
 import { TaxonomyLayout, TaxonomyDetailPage, TaxonomyListPage } from './taxonomy';
 import { ContentTagsDrawer } from './content-tags-drawer';
 import AccessibilityPage from './accessibility-page';
+import HowItWorks from './how-it-works';
 import { ToastProvider } from './generic/toast-context';
 
 import 'react-datepicker/dist/react-datepicker.css';
@@ -77,6 +78,7 @@ const App = () => {
         <Route path="/legacy/preview-changes/:usageKey" element={<PreviewChangesEmbed />} />
         <Route path="/course/:courseId/*" element={<CourseAuthoringRoutes />} />
         <Route path="/course_rerun/:courseId" element={<CourseRerun />} />
+        <Route path="/howitworks" element={<HowItWorks />} />
         {getConfig().ENABLE_ACCESSIBILITY_PAGE === 'true' && (
           <Route path="/accessibility" element={<AccessibilityPage />} />
         )}
